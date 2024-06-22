@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Introduction;
 
 //Java only supports pass by value
 public class PassByValue {

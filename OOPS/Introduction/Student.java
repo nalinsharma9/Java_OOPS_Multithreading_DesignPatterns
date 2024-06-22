@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Introduction;
 
 public class Student {
     int rno;
