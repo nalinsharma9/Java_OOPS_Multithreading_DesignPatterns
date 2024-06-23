@@ -19,4 +19,10 @@ public class Human {
 
     }
 
+    static void message(){
+        System.out.println("Hello from Human class");
+        //we can't access non-static members in static context
+        //System.out.println(this.age);
+    }
+
 }
