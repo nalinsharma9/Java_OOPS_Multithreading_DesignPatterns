@@ -1,6 +1,8 @@
 package Design_Patterns.FactoryDesignPattern;
 import java.util.*;
 
+/*Factory pattern is used when we need to instantiate the object based on some condition */
+
 public class Main {
 
 	public static void main(String[] args) {

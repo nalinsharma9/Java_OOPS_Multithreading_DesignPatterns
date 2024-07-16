@@ -2,13 +2,14 @@ package Design_Patterns.FactoryDesignPattern;
 
 public class FactoryClass {
 	public Notification getObject(String str) {
+		Notification o;
 		if(str.equals("EMAIL")) {
-			Notification o = new EmailNotification();
+			o = new EmailNotification();
 			return o;
 		}
 		else
 		{
-			Notification o = new PushNotification();
+			o = new PushNotification();
 			return o;
 		}
 			
