@@ -16,7 +16,7 @@ public class Main {
 //        System.out.println(bw2);
 
 //        Box b2 = new BoxWeight(5,10,4, 20);
-//        access is decided by the type of reference variable hence we can access only the members of Box class
+//        access and the method signature is decided by the type of reference variable hence we can access only the members of Box class
 //        System.out.println(b2);
 //        System.out.println(b2.weight);
 
