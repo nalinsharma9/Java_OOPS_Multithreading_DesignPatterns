@@ -25,6 +25,8 @@ public class Main {
         Shapes s1 = new Square();
         s1.area(2);
 
+//       Static methods can be inherited but cannot be overriden, because it depends on class name and not objects.
+
     }
 
 
