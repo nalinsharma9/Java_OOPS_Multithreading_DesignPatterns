@@ -3,7 +3,7 @@
 ### Create a Piece Type enum and PlayingPiece Class
 
 PlayingPiece Class
-![PieceClass](piece.png)
+![PieceClass](Piece.png)
 
 ### Create a Board Class and Player Class
 Board and Player class has a reference to PlayingPiece class.
