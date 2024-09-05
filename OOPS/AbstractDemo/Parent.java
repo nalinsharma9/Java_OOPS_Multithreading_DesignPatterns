@@ -4,10 +4,12 @@ package OOPS.AbstractDemo;
 
 public abstract class Parent {
     int age;
+    final int value;
 
     //We can define a constructor of abstract class, but we cannot call it
-    public Parent(int age){
+    public Parent(int age,int value){
         this.age = age;
+        this.value = value;
     }
     abstract void career();
     abstract void partner();

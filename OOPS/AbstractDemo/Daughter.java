@@ -3,7 +3,7 @@ package OOPS.AbstractDemo;
 public class Daughter extends Parent {
 
     public Daughter(int age){
-        super(age);
+        super(age,10);
     }
 
     @Override

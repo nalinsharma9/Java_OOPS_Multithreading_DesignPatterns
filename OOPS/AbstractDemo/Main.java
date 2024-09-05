@@ -13,5 +13,11 @@ public class Main {
         Parent.staticMethod();
         son.normalMethod();
         daughter.normalMethod();
+
+        Car c = new Car();
+        c.start();
+        c.acc();
+        c.brake();
+        c.stop();
     }
 }
