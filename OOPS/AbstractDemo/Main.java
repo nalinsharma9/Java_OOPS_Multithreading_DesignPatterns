@@ -19,5 +19,10 @@ public class Main {
         c.acc();
         c.brake();
         c.stop();
+
+        //We can create reference of interace type
+        Engine e = new Car();
+        //can't access attribute of child instance
+        //e.a;
     }
 }

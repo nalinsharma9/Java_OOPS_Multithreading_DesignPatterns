@@ -19,6 +19,13 @@ public class BoxWeight extends Box{
     }
 
     @Override
+    //Access modifier of overriden method cannot be less than the modifier of base class
+//    private void greet(){
+      public void greet(){
+        System.out.println("Greeting from BoxWeight");
+    }
+
+    @Override
     public String toString() {
         return super.toString() +
                 "BoxWeight{" +

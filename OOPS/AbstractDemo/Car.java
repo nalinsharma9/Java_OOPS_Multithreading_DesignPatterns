@@ -2,6 +2,7 @@ package OOPS.AbstractDemo;
 
 public class Car implements Engine, Brake, Media{
     //Class does not care which interface's method its overriding
+    int a = 30;
     @Override
     public void start(){
         System.out.println("Engine Started");

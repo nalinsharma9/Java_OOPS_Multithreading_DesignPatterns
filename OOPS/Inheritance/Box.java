@@ -29,6 +29,11 @@ public class Box {
         this.w = old.w;
     }
 
+    public void greet(){
+        System.out.println("Greet");
+    }
+
+
     @Override
     public String toString() {
         return "Box{" +
@@ -37,4 +42,6 @@ public class Box {
                 ", w=" + w +
                 '}';
     }
+
+
 }
