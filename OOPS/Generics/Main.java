@@ -15,6 +15,11 @@ public class Main {
         }
         System.out.println(list);
 
+        CustomGenrericArrayList <String> strList = new CustomGenrericArrayList<>();
+        strList.add("Nalin");
+//        strList.add(2);           // Can't add numbers , hence generics helps to implement type safety
+        System.out.println(strList.get(0));
+
     }
 
 }
