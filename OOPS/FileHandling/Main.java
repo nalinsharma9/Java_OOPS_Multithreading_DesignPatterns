@@ -17,14 +17,14 @@ Writer(Abstract extended by) -> FileWriter,CharArrayWriter,etc
  */
 
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.io.FileReader;
 
 public class Main {
     public static void main(String[] args) {
-          //try-with-resource syntax which automatically closes resource in the try block
+        File file = new File("OOPS/FileHandling/note.txt");
+
+        //try-with-resource syntax which automatically closes resource in the try block
 //        try(InputStreamReader reader = new InputStreamReader(System.in)){
 //            System.out.print("Enter some letters: ");
 //            int letters = reader.read();
@@ -37,17 +37,40 @@ public class Main {
 //            System.out.println(e.getMessage());
 //        }
 
-        //try-with-resource syntax which automatically closes resource in the try block
-        try (FileReader reader = new FileReader("path.txt")) {
-            System.out.print("Enter some letters: ");
-            int letters = reader.read();
-            while (reader.ready()) {
-                System.out.println((char) letters);
-                letters = reader.read();
-            }
-            System.out.println();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+
+//        //try-with-resource syntax which automatically closes resource in the try block
+//        try (FileReader reader = new FileReader(file.getAbsolutePath())) {
+//            System.out.print("Enter some letters: ");
+//            int letters = reader.read();
+//            while (reader.ready()) {
+//                System.out.println((char) letters);
+//                letters = reader.read();
+//            }
+//            System.out.println();
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
+//    }
+
+        /*  BufferedReader is used to read from a character-input stream
+            InputStreamReader converts byte Stream to character Stream
+            Keyboard(Byte Stream) -> Character Stream -> BufferedReader is reading from character stream
+            BufferedStream is more efficient than InputStreamReader that is why it is used for fast input/output in online competitive programs
+        */
+//        try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in));){
+//            System.out.print("Enter some letters: ");
+//            System.out.println("You typed: " + br.readLine());
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
+//
+//        try(BufferedReader br = new BufferedReader(new FileReader(file.getAbsolutePath()));){
+//            while(br.ready()){
+//                System.out.println(br.readLine());
+//            }
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
+
     }
 }
