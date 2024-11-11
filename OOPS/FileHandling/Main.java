@@ -72,5 +72,22 @@ public class Main {
 //            System.out.println(e.getMessage());
 //        }
 
+        //Output
+        OutputStream os = System.out;
+//        os.write(😃); range is exceeded
+        System.out.println();
+
+        try(OutputStreamWriter osw = new OutputStreamWriter(System.out);){
+            osw.write("Hello World");
+            osw.write(97);
+            osw.write(10);
+            osw.write('A');
+            osw.write('\n');
+            char[] arr = "HelloWorld".toCharArray();
+            osw.write(arr);
+//            osw.write(😃);
+        }catch(IOException E){
+            System.out.println(E.getMessage());
+        }
     }
 }
