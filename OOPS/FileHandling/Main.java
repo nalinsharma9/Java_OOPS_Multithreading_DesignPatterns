@@ -79,6 +79,7 @@ public class Main {
 
         try(OutputStreamWriter osw = new OutputStreamWriter(System.out);){
             osw.write("Hello World");
+            //ASCII values are converted to string
             osw.write(97);
             osw.write(10);
             osw.write('A');
