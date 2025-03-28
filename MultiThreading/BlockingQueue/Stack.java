@@ -1,4 +1,4 @@
-package MultiThreading;
+package MultiThreading.BlockingQueue;
 
 public class Stack {
     private int[] array;

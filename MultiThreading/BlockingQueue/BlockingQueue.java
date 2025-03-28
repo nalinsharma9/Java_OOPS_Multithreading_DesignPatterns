@@ -1,4 +1,4 @@
-package MultiThreading;
+package MultiThreading.BlockingQueue;
 
 /*
 Producer Consumer pattern problem in multithreading.

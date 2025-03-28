@@ -1,4 +1,4 @@
-package MultiThreading;
+package MultiThreading.CustomMutex;
 
 public class CustomMutex {
 
