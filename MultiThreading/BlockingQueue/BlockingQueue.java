@@ -30,6 +30,7 @@ public class BlockingQueue {
                 }
             }
             q.add(item);
+            //Wait and Notify keywords are tied to the lock object
             q.notifyAll();                      //awakens all threads in wait state to runnable state, but they still have to fight for lock
             return true;
         }
@@ -40,6 +41,7 @@ public class BlockingQueue {
             //if(q.size() == 0){                  //every class extends Objects class which has wait and notify methods
             while(q.size() == 0) {
                 try {
+                    //Wait and Notify keywords are tied to the lock object
                     q.wait();                       //the thread waits until notified and resumes execution from after the line q.wait()
                 } catch (InterruptedException e) {  // the thread will check condition again in an entry while loop after awakening
                     throw new RuntimeException(e);

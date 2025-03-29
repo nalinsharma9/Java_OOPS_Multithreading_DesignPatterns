@@ -16,7 +16,8 @@ public class CustomMutex {
 
     public synchronized void acquire() throws InterruptedException {
 //        if (isLocked) {
-        while (isLocked) {          //while is critical to check condition again after the thread is awakened,
+        while (isLocked) { //while is critical to check condition again after the thread is awakened,
+                                    //Wait and Notify keywords are tied to the lock object
             this.wait();            // because maybe multiple threads were waiting to be awakened, and they did not check the condition again
         }
         isLocked = true;
@@ -24,6 +25,6 @@ public class CustomMutex {
 
     public synchronized void release() {
         isLocked = false;
-        this.notifyAll();
+        this.notifyAll();         //Wait and Notify keywords are tied to the lock object
     }
 }
