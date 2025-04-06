@@ -9,7 +9,7 @@ public class EmployeeRepositoryProxy implements EmployeeRepository {
 
     public void create(String role, Employee emp) {
         if (role.equals("ADMIN")) {
-            empRepo.create(role, emp);
+            empRepo.create(emp);
         } else {
             System.out.println("Access denied");
         }
@@ -18,7 +18,7 @@ public class EmployeeRepositoryProxy implements EmployeeRepository {
 
     public void update(String role, Employee emp) {
         if (role.equals("ADMIN") || (role.equals("USER"))) {
-            empRepo.update(role, emp);
+            empRepo.update(emp);
         } else {
             System.out.println("Access Denied");
         }
@@ -27,9 +27,25 @@ public class EmployeeRepositoryProxy implements EmployeeRepository {
 
     public void delete(String role, Employee emp) {
         if (role.equals("ADMIN")) {
-            empRepo.delete(role, emp);
+            empRepo.delete(emp);
         } else {
             System.out.println("Access denied");
         }
     }
+
+    @Override
+    public void create(Employee emp) {
+        throw new UnsupportedOperationException("Direct access not allowed. Use create(String role, Employee emp) instead.");
+    }
+
+    @Override
+    public void update(Employee emp) {
+        throw new UnsupportedOperationException("Direct access not allowed. Use update(String role, Employee emp) instead.");
+    }
+
+    @Override
+    public void delete(Employee emp) {
+        throw new UnsupportedOperationException("Direct access not allowed. Use delete(String role, Employee emp) instead.");
+    }
+
 }

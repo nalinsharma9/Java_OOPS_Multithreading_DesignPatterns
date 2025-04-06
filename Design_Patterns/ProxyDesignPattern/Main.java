@@ -6,5 +6,6 @@ public class Main {
         EmployeeRepositoryProxy repo = new EmployeeRepositoryProxy();
         repo.create("ADMIN", emp);
         repo.delete("USER", emp);
+        repo.create(emp);
     }
 }
