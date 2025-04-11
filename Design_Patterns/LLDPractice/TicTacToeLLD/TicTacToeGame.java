@@ -1,6 +1,6 @@
-package Design_Patterns.TicTacToeLLD;
+package Design_Patterns.LLDPractice.TicTacToeLLD;
 
-import Design_Patterns.TicTacToeLLD.Model.*;
+import Design_Patterns.LLDPractice.TicTacToeLLD.Model.*;
 
 import java.util.*;
 import java.util.Deque;

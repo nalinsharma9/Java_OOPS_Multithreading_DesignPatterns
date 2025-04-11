@@ -1,4 +1,4 @@
-package Design_Patterns.TicTacToeLLD.Model;
+package Design_Patterns.LLDPractice.TicTacToeLLD.Model;
 
 import java.util.ArrayList;
 import java.util.List;

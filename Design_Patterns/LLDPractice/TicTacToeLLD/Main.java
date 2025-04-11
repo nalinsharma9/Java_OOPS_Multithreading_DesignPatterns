@@ -1,4 +1,4 @@
-package Design_Patterns.TicTacToeLLD;
+package Design_Patterns.LLDPractice.TicTacToeLLD;
 
 public class Main {
 
