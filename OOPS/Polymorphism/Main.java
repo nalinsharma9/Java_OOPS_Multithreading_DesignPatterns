@@ -4,6 +4,8 @@ public class Main {
     public static void main(String[] args) {
 //        Static or Compile Time polymorphism  using Overloading
 //        Same name but different signature of method
+//        Note that different return type with same method signature is not possible in overloading.
+//        Ex: int result(int a, int b)   double result(int a, int b)
 
         Shapes s = new Shapes();
         s.area();
