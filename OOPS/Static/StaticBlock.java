@@ -19,7 +19,6 @@ public class StaticBlock {
 
         StaticBlock.b +=3;
 
-        StaticBlock obj = new StaticBlock();
         System.out.println("Value of a: "+StaticBlock.a + " Value of b: "+StaticBlock.b);
     }
 }
