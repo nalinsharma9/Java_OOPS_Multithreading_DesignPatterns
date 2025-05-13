@@ -33,6 +33,10 @@ public class Box {
         System.out.println("Greet");
     }
 
+    public void run(){
+        System.out.println("Run");
+    }
+
 
     @Override
     public String toString() {
