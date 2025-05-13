@@ -4,7 +4,9 @@ public class BoxWeight extends Box{
     double weight;
 
     public BoxWeight(){
+        System.out.println("Inside BoxWeight default constructor");
         this.weight=-1;
+
     }
 
     public BoxWeight(double l, double  h, double w, double weight){

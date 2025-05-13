@@ -6,6 +6,7 @@ public class Box {
     double w;
 
     Box(){
+        System.out.println("Inside Box default constructor");
         this.l = -1;
         this.h = -1;
         this.w = -1;
