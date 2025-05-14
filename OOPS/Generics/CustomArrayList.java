@@ -20,7 +20,7 @@ public class CustomArrayList {
     }
 
     public int remove(){
-        int removedItem = data[size--];
+        int removedItem = data[--size];
         return removedItem;
     }
 

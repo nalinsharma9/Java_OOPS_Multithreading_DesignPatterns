@@ -28,7 +28,7 @@ public class CustomGenrericArrayList <T> {
     }
 
     public T remove(){
-        Object removedItem = data[size--];
+        Object removedItem = data[--size];
         return (T)removedItem;
     }
 
